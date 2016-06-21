@@ -39,7 +39,7 @@ defmodule Zencoder.Mixfile do
     [
       {:httpotion, "2.1.0"},
       {:ibrowse, "~> 4.2"},
-      {:poison, "2.1.0"},
+      {:poison, "~> 2.0"},
       {:exvcr, "~> 0.7.0",       only: [:dev, :test]},
       {:excoveralls, "~> 0.5.0", only: [:dev, :test]},
       {:meck, "~> 0.8.2",        only: [:dev, :test]}
