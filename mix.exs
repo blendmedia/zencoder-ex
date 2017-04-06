@@ -7,7 +7,7 @@ defmodule Zencoder.Mixfile do
       version: "1.0.1",
       elixir: "~> 1.2",
       test_coverage: [tool: ExCoveralls],
-      deps: deps,
+      deps: deps(),
       package: [
         contributors: ["Adam Kittelson"],
         licenses: ["MIT"],
