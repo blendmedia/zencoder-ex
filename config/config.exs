@@ -1,8 +1,7 @@
 # This file is responsible for configuring your application
 # and its dependencies. The Mix.Config module provides functions
 # to aid in doing so.
-use Mix.Config
-
+import Config
 # Note this file is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project.

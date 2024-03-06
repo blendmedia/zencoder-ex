@@ -5,7 +5,7 @@ defmodule Zencoder.Mixfile do
     [
       app: :zencoder,
       version: "1.0.1",
-      elixir: "~> 1.2",
+      elixir: "~> 1.16",
       test_coverage: [tool: ExCoveralls],
       deps: deps(),
       package: [
@@ -22,7 +22,7 @@ defmodule Zencoder.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:httpotion],
+    [applications: [:httpotion, :exvcr],
      mod: {Zencoder, []}]
   end
 
@@ -37,12 +37,11 @@ defmodule Zencoder.Mixfile do
   # Type `mix help deps` for more examples and options
   def deps do
     [
-      {:httpotion, "2.1.0"},
-      {:ibrowse, "~> 4.2"},
+      {:httpotion, "~> 3.1"},
+      {:ibrowse, "~> 4.4"},
       {:poison, "~> 2.0"},
-      {:exvcr, "~> 0.7.0",       only: [:dev, :test]},
-      {:excoveralls, "~> 0.5.0", only: [:dev, :test]},
-      {:meck, "~> 0.8.2",        only: [:dev, :test]}
+      {:exvcr, "~> 0.11",       only: [:test]},
+      {:meck, "~> 0.9.2",        only: [:test]}
     ]
   end
 
