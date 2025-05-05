@@ -22,7 +22,7 @@ defmodule Zencoder.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:httpotion, :exvcr],
+    [applications: [:httpotion, :exvcr, :poison],
      mod: {Zencoder, []}]
   end
 

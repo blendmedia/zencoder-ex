@@ -1,5 +1,6 @@
 defmodule Zencoder.Resource do
   alias Zencoder.Response
+  require Poison
 
   def get(url, options) do
     Response.process fn ->

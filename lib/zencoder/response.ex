@@ -1,4 +1,5 @@
 defmodule Zencoder.Response do
+  require Poison
   defstruct body: nil, success?: nil, raw_body: nil, code: nil, headers: nil, errors: nil
 
   def process(request) do
@@ -12,7 +13,7 @@ defmodule Zencoder.Response do
 
   def process_response(response) do
     body = response.body
-           |> String.strip
+           |> String.trim
            |> process_body
 
     %__MODULE__ {
