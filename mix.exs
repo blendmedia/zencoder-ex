@@ -22,7 +22,7 @@ defmodule Zencoder.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:httpotion, :exvcr, :poison],
+    [applications: [:httpotion, :poison],
      mod: {Zencoder, []}]
   end
 
@@ -40,7 +40,6 @@ defmodule Zencoder.Mixfile do
       {:httpotion, "~> 3.1"},
       {:ibrowse, "~> 4.4"},
       {:poison, "~> 2.0"},
-      {:exvcr, "~> 0.15",       only: [:test]},
       {:meck, "~> 0.9.2",        only: [:test]}
     ]
   end
